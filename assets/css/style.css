@@ -1,0 +1,214 @@
+/* ------------------------------------------------------------------------------------------------------------------*/
+/*               CSS Styling for Index, Portfolio and Contact Page for Basic Portfolio                               */
+/* ------------------------------------------------------------------------------------------------------------------*/
+
+/* body Styling for all pages */
+body{
+    width: 960px;
+    margin-left: 15%;
+    margin-top: 0%;
+}
+
+/* Setting Header Backgroud for all pages*/
+.Hdr{
+    width: 100%;  
+}
+
+/* Styling Header 1 for all pages*/
+.Hdr1{
+    float: left;   /* Float left around Header  */
+    background-color: #4aaaa5;
+    height: 40px;
+    color: #fff;
+    margin-bottom: 0%;
+    margin-left: 15%;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 5px;
+    margin-top: 5px;
+    padding-left: 20px;  
+    padding-right: 15px;  
+    text-align: center;
+}
+
+/* Styling Header 2* for all pages */
+.Hdr2{
+    float: right;   /* Float right around Header 1 */
+    margin-right: 15%;
+    margin-top: 30px;
+}
+
+/* Styling link for visited, active and hover for all pages*/
+a:link, a:visited, a:active {
+    text-decoration-line: none; 
+    color:#ccc;
+}
+a:hover {
+    color: blueviolet;
+    text-decoration-line: none; 
+}
+
+/* Clear Float after Header 2 for all pages*/
+.Hdr::after{
+    clear: both;
+    display: block;
+    content: "";
+}
+
+/* Styling Page details box for all pages*/
+.Details{
+    width:100%;
+    height: 480px;
+    background-color: #ccc;
+    border: solid #ddd;
+}
+
+/* Styling the common details i.e. text family, size and background for all pages */
+.about,.portfolio,.contact{
+    vertical-align: center;
+    position: relative;
+    background-color: #fff;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+/* styling the header of details box for all pages */
+header{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #4aaaa5;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: solid #4aaaa5;
+}
+
+/* -------------------- Below changes are specific to Index Page Only ----------------- */
+
+/* Class Float_img: contains Images and Paragraphs. This class will help the contents to float around eachother */
+.float_img{
+    width:95%;
+    margin-right: 5%;
+}
+
+/*Styling Image of Index Page */
+img{
+    float: left;  /*will float the image on the left of the contents of the float_img class*/
+    height: 100px;
+    width: 180px;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding-bottom:1px;
+}
+
+/*styling the paragraphs for index page only */
+.p2,.p3,.p4,.p5{
+    margin-left: 20px;
+} 
+.p5{
+    padding-bottom: 10px;
+ } 
+
+ /* Clearing the float after Paragraph 5*/
+.p5::after{
+    clear:both;
+    content: "";
+    display: block;
+}
+/* -------------------- End of Index Page Specific changes -------------------------------- */
+
+
+/* -------------------- Below changes are specific to Portfolio Page Only ----------------- */
+
+/* fl_img Class: contains 5 Images. It will help the images to float around eachother */
+.fl_img{
+    width:66%;
+    margin-right: 20px;
+    background-color: #fff;
+ }
+
+ /* Styling the Container Class: It contains Portfolio Images and Descriptions */
+.container {
+    float: left;
+    width: 180px;
+    position: relative;
+    margin: 10px;
+}
+    /* Specific styling for container 1 and 2 */
+    #c1,#c2{           
+        margin-top: 20px;
+    }
+
+    /* Specific styling for container 5 */
+    #c5{               
+        margin-bottom: 20px;
+    }
+
+     /* Styling for texts / Descriptions of Profile page */
+    .text-block {
+        position: absolute;
+        margin-left: 10px;
+        bottom: 5px;
+        width:180px;
+        background-color: teal;
+        color: white;
+        font-size: 9px;
+        text-align: center;
+    }
+
+    /* Specific styling for image 1,3,5 and text 1,3,5 */
+    #img1,#img3,#img5,#txt1,#txt3,#txt5{
+        margin-left: 20px;
+    }
+
+    /* Specific styling for text 2,4 */
+    #txt2, #txt4{
+        margin-left: 20px;
+    }
+
+/* Clearing the Float */
+.fl_img::after{
+    clear: both;
+    content:"";
+    display: block; 
+}
+/* -------------------- End of Portfolio Page Specific changes ---------------------------- */
+
+
+
+/* -------------------- Below changes are specific to Contact Page Only ----------------- */
+
+/* Styling the Form */
+form{
+    color: #aaaaaa;
+    font-size: 12px;
+}
+/* -------------------- End of Contact Page Specific changes ---------------------------- */
+
+/* Styling the Common Footer of all pages */
+footer{
+    clear: both;
+    content:"";
+    display: block;
+    background-color: #333333; 
+    color: #fff;
+    font-size: 10px;
+    padding: 20px;
+    padding-bottom: 0%;
+    border-top: solid #4aaaa5;
+    text-align: center;
+    width:925px;
+}
+
+/* Sticky class styling to make the Footer Sticky at the bottom of the all pages */
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+}
+
